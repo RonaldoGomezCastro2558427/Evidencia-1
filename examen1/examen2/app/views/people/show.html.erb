@@ -1,0 +1,41 @@
+<h1>People#show</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Identificacion:</strong>
+  <%= @person.identification %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Second name:</strong>
+  <%= @person.second_name %>
+</p>
+
+<p>
+  <strong>First last name:</strong>
+  <%= @person.first_last_name %>
+</p>
+
+<p>
+  <strong>Second last name:</strong>
+  <%= @person.second_last_name %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @person.role.role_name %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @person.document.document_type %>
+</p>
+
+<a href="<%= edit_person_path%>" >Editar</a>
+<a href="<%= people_path%>" >Lista</a>
+

@@ -1,0 +1,11 @@
+
+<%= simple_form_for @person do |f| %>
+  <%= f.association :document, label_method: :document_type%>
+  <%= f.association :role, label_method: :role_name %>
+  <%= f.input :identification%>
+  <%= f.input :first_name%>
+  <%= f.input :second_name %>
+  <%= f.input :first_last_name%>
+  <%= f.input :second_last_name%>
+  <%= f.button :submit %>
+<% end %>
